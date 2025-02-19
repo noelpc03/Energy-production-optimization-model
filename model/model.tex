@@ -1,0 +1,104 @@
+\documentclass{article}
+\usepackage{amsmath}
+\usepackage{amssymb}
+
+\begin{document}
+
+\title{Modelo de Optimización Lineal Entera Mixta (MILP)}
+\author{}
+\date{}
+\maketitle
+
+\section{Definición del Problema}
+
+Se desea minimizar el costo total de construcción y operación de plantas de generación eléctrica mientras se satisface la demanda energética y se cumplen las restricciones ambientales.
+
+\subsection{Datos del Problema}
+
+\begin{itemize}
+    \item Tipos de Plantas:
+    \begin{itemize}
+        \item Térmica (T)
+        \item Hidroeléctrica (H)
+        \item Renovable (R)
+    \end{itemize}
+    \item Costos:
+    \begin{itemize}
+        \item Costo de construcción: 
+        \begin{align*}
+            &\text{T: } 1,000,000 \text{ USD} \\
+            &\text{H: } 2,000,000 \text{ USD} \\
+            &\text{R: } 800,000 \text{ USD}
+        \end{align*}
+        \item Costo de generación:
+        \begin{align*}
+            &\text{T: } 50 \text{ USD/MW} \\
+            &\text{H: } 30 \text{ USD/MW} \\
+            &\text{R: } 20 \text{ USD/MW}
+        \end{align*}
+    \end{itemize}
+    \item Emisiones de CO$_2$:
+    \begin{align*}
+        &\text{T: } 0.8 \text{ ton/MW} \\
+        &\text{H, R: } 0 \text{ ton/MW}
+    \end{align*}
+    \item Generación mínima y máxima por planta:
+    \begin{align*}
+        &\text{T: } 50 \leq g_{Ti} \leq 200 \\
+        &\text{H: } 100 \leq g_{Hj} \leq 300 \\
+        &\text{R: } 20 \leq g_{Rk} \leq 150
+    \end{align*}
+    \item Restricciones:
+    \begin{itemize}
+        \item Demanda total: 1000 MW.
+        \item Límite de CO$_2$: 500 toneladas.
+        \item Máximo de plantas por tipo: 10.
+    \end{itemize}
+\end{itemize}
+
+
+\subsection{Variables}
+
+Variables enteras:
+\begin{align*}
+    x_T, x_H, x_R \in \mathbb{Z}^+ \quad &\text{Número de plantas a construir de cada tipo (entre 0 y 10).}
+\end{align*}
+
+Variables continuas:
+\begin{align*}
+    g_{Ti}, g_{Hj}, g_{Rk} \geq 0 \quad &\text{Generación de cada planta térmica, hidroeléctrica y renovable.}
+\end{align*}
+
+\subsection{Función Objetivo}
+
+Minimizar el costo total de construcción y generación:
+\begin{align*}
+    \min Z &= \sum_{i=1}^{x_T} (1,000,000) + \sum_{j=1}^{x_H} (2,000,000) + \sum_{k=1}^{x_R} (800,000) \\
+    &+ \sum_{i=1}^{x_T} (50 g_{Ti}) + \sum_{j=1}^{x_H} (30 g_{Hj}) + \sum_{k=1}^{x_R} (20 g_{Rk}).
+\end{align*}
+
+\subsection{Restricciones}
+
+\textbf{1. Satisfacción de la demanda energética:}
+\begin{align*}
+    \sum_{i=1}^{x_T} g_{Ti} + \sum_{j=1}^{x_H} g_{Hj} + \sum_{k=1}^{x_R} g_{Rk} \geq 1000.
+\end{align*}
+
+\textbf{2. Límites de generación por planta:}
+\begin{align*}
+    50 \leq g_{Ti} \leq 200, \quad &\forall i = 1, \dots, x_T, \\
+    100 \leq g_{Hj} \leq 300, \quad &\forall j = 1, \dots, x_H, \\
+    20 \leq g_{Rk} \leq 150, \quad &\forall k = 1, \dots, x_R.
+\end{align*}
+
+\textbf{3. Restricción de emisiones de CO$_2$:}
+\begin{align*}
+    \sum_{i=1}^{x_T} 0.8 g_{Ti} \leq 500.
+\end{align*}
+
+\textbf{4. Límite en la cantidad de plantas:}
+\begin{align*}
+    0 \leq x_T, x_H, x_R \leq 10, \quad x_T, x_H, x_R \in \mathbb{Z}^+.
+\end{align*}
+
+\end{document}
