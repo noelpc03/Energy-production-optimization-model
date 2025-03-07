@@ -1,1 +1,0 @@
-# -Energy-production-optimization-model

@@ -93,7 +93,7 @@ La función objetivo busca minimizar el costo total de construcción y operació
 \end{itemize}
 
 \section*{Estrategia de Resolución}
-El problema se resolverá en tres fases:
+El problema se resolverá en dos fases:
 
 \begin{enumerate}[noitemsep]
     \item \textbf{Fase 1:} Resolver el problema relajado utilizando el método Simplex.
@@ -154,9 +154,9 @@ print("Generación térmica:", pulp.value(G_T))
 print("Generación hidroeléctrica:", pulp.value(G_H))
 print("Generación renovable:", pulp.value(G_R))
 
-# Visualización de la generación
+# Visualización de la generación 
 labels = ["Térmica", "Hidroeléctrica", "Renovable"]
-generacion = [pulp.value(G_T), pulp.value(G_H), pulp.value(G_R)]
+generacion = [pulp.value(x_T), pulp.value(x_H), pulp.value(x_R)]
 
 plt.figure(figsize=(8, 6))
 plt.bar(labels, generacion, color=['red', 'blue', 'green'])

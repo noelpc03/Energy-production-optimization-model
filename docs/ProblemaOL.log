@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 24.1) (preloaded format=pdflatex 2024.2.1)  19 FEB 2025 01:39
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 24.1) (preloaded format=pdflatex 2024.2.1)  19 FEB 2025 14:50
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -312,12 +312,12 @@ Underfull \hbox (badness 10000) in paragraph at lines 104--106
  []
 
 [2]
-<simplex.png, id=23, 502.2765pt x 396.0396pt>
+<simplex.png, id=23, 499.3857pt x 395.3169pt>
 File: simplex.png Graphic file (type png)
 <use simplex.png>
 Package pdftex.def Info: simplex.png  used on input line 180.
-(pdftex.def)             Requested size: 364.19667pt x 287.17876pt.
- [3 <./simplex.png>] [4] [5]
+(pdftex.def)             Requested size: 364.19667pt x 288.30145pt.
+ [3] [4 <./simplex.png>] [5]
 <BranchAndBound.png, id=35, 499.3857pt x 396.0396pt>
 File: BranchAndBound.png Graphic file (type png)
 <use BranchAndBound.png>
@@ -335,13 +335,13 @@ L3 programming layer <2024-01-22>
 Here is how much of TeX's memory you used:
  7370 strings out of 474542
  110749 string characters out of 5744919
- 2354978 words of memory out of 5000000
+ 2400978 words of memory out of 5000000
  29528 multiletter control sequences out of 15000+600000
  566901 words of font info for 71 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  57i,11n,65p,596b,1853s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <C:/Users/Noel/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/Users/Noel/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Users/Noel/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Users/Noel/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/Noel/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi5.pfb><C:/Users/Noel/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi7.pfb><C:/Users/Noel/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/Noel/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/Noel/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr17.pfb><C:/Users/Noel/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr5.pfb><C:/Users/Noel/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr7.pfb><C:/Users/Noel/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/Noel/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmtt9.pfb><C:/Users/Noel/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/symbols/msbm10.pfb><C:/Users/Noel/AppData/Local/Programs/MiKTeX/fonts/type1/public/cm-super/sfrm1000.pfb>
-Output written on ProblemaOL.pdf (6 pages, 231823 bytes).
+Output written on ProblemaOL.pdf (6 pages, 230297 bytes).
 PDF statistics:
  102 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
